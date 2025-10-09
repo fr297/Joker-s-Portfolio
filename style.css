@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(37, 171, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.batman {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.mask {
+  position: absolute;
+  width: 400px;
+  height: 540px;
+  background-color: black;
+  border-radius: 45% 45% 12% 12%;
+}
+
+.eye {
+  position: absolute;
+  width: 90px;
+  height: 150px;
+  background-color: white;
+  clip-path: polygon(100% 31%, 8% 64%, 43% 90%);
+  transform: scale(-1, 1);
+  transform: rotate(-100deg);
+  top: 185px;
+  left: 60px;
+  z-index: 2;
+}
+.eye2 {
+  position: absolute;
+  width: 90px;
+  height: 150px;
+  background-color: white;
+  clip-path: polygon(100% 31%, 8% 64%, 43% 90%);
+  transform: rotate(10deg);
+  top: 165px;
+  right: 60px;
+  z-index: 2;
+}
+
+.ear {
+  position: absolute;
+  clip-path: polygon(0 0, 0 100%, 53% 100%);
+  width: 140px;
+  height: 130px;
+  background-color: black;
+  top: -90px;
+}
+
+.ear2 {
+  position: absolute;
+  clip-path: polygon(0 0, 0 100%, 53% 100%);
+  transform: scale(-1, 1);
+  width: 140px;
+  height: 130px;
+  background-color: black;
+  top: -90px;
+  left: 260px;
+}
+
+.rect {
+  top: 38px;
+  width: 90px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+}
+
+.rect2 {
+  width: 90px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+  right: 0;
+  top: 38px;
+}
+
+.mouth {
+  position: absolute;
+  clip-path: polygon(
+    51% 38%,
+    100% 26%,
+    90% 68%,
+    64% 100%,
+    34% 100%,
+    7% 69%,
+    0 25%
+  );
+  width: 300px;
+  height: 250px;
+  background-color: beige;
+  top: 290px;
+  left: 50px;
+}
+
+.circle {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  top: 580px;
+}
+
+.circle2 {
+  position: absolute;
+  background-color: black;
+  width: 350px;
+  height: 200px;
+  border-radius: 50%;
+  top: 610px;
+  left: 25px;
+}
+
+.circle3 {
+  position: absolute;
+  background-color: rgb(221, 221, 221);
+  width: 55px;
+  height: 50px;
+  top: 612px;
+  left: 220px;
+  transform: rotate(3deg);
+  border-radius: 0 0 100px 70px;
+}
+.circle4 {
+  position: absolute;
+  background-color: rgb(221, 221, 221);
+  width: 55px;
+  height: 50px;
+  border-radius: 0 0 70px 100px;
+  top: 612px;
+  left: 120px;
+  transform: rotate(-3deg);
+}
+
+.ear3 {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background-color: black;
+  top: 587px;
+  left: 173px;
+  clip-path: polygon(0 0, 0% 100%, 28% 100%);
+}
+.ear4 {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background-color: black;
+  top: 587px;
+  left: 181px;
+  clip-path: polygon(0 0, 0% 100%, 28% 100%);
+  transform: scale(-1, 1);
+}
+.circle5 {
+  position: absolute;
+  width: 40px;
+  height: 75px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 100% 100% 0 0;
+  top: 757px;
+  left: 110px;
+  transform: rotate(-45deg);
+}
+.circle6 {
+  position: absolute;
+  width: 40px;
+  height: 75px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 100% 100% 0 0;
+  top: 757px;
+  left: 245px;
+  transform: rotate(45deg);
+}
+.circle7 {
+  position: absolute;
+  background-color: rgb(221, 221, 221);
+  width: 30px;
+  height: 60px;
+  border-radius: 100% 100% 100% 100%;
+  top: 765px;
+  left: 145px;
+  transform: rotate(-35deg);
+}
+.circle8 {
+  position: absolute;
+  background-color: rgb(221, 221, 221);
+  width: 30px;
+  height: 60px;
+  border-radius: 100% 100% 100% 100%;
+  top: 765px;
+  left: 215px;
+  transform: rotate(35deg);
+}
+.body {
+  clip-path: polygon(31% 0, 71% 0, 100% 39%, 0 39%);
+  width: 900px;
+  background-color: black;
+  height: 900px;
+  position: absolute;
+  top: 530px;
+  left: -260px;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .body {
+    display: none;
+  }
+}
